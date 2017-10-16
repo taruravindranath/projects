@@ -60,7 +60,7 @@ class Card
             case self::CLUBS:
                 return "Clubs";
             default:
-                throw new Exception("Invalid Suit");
+                throw new \Exception("Invalid Suit");
         }
     }
 
@@ -94,7 +94,7 @@ class Card
             case 13:
                 return "K";
             default:
-                throw new Exception("Invalid value");
+                throw new \Exception("Invalid value");
         }
     }
 

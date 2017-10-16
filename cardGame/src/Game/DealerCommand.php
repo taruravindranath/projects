@@ -53,6 +53,9 @@ class DealerCommand extends AbstractCommand
                 $deck->display();
                 $rounds--;
             }
+        } else {
+            throw new \Exception("Invalid Arguments passed. "
+                    . "Please pass integers for [players] and [rounds]");
         }
     }
    
