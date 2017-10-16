@@ -25,12 +25,13 @@ use Symfony\Component\Console\Exception\RuntimeException;
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
-abstract class Input implements InputInterface
+abstract class Input implements InputInterface, StreamableInputInterface
 {
     /**
      * @var InputDefinition
      */
     protected $definition;
+    protected $stream;
     protected $options = array();
     protected $arguments = array();
     protected $interactive = true;
@@ -155,7 +156,7 @@ abstract class Input implements InputInterface
             throw new InvalidArgumentException(sprintf('The "%s" option does not exist.', $name));
         }
 
-        return isset($this->options[$name]) ? $this->options[$name] : $this->definition->getOption($name)->getDefault();
+        return array_key_exists($name, $this->options) ? $this->options[$name] : $this->definition->getOption($name)->getDefault();
     }
 
     /**
@@ -188,5 +189,21 @@ abstract class Input implements InputInterface
     public function escapeToken($token)
     {
         return preg_match('{^[\w-]+$}', $token) ? $token : escapeshellarg($token);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setStream($stream)
+    {
+        $this->stream = $stream;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getStream()
+    {
+        return $this->stream;
     }
 }
