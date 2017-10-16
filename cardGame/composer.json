@@ -1,0 +1,36 @@
+{
+    "name": "root/utils",
+    "authors": [
+        {
+            "name": "Tarun Ravindranath",
+            "email": "taruravindranath@gmail.com"
+        }
+    ],
+    "require": {
+ 	"videlalvaro/php-amqplib": "~2.4",
+        "symfony/console": "~2.6",
+        "monolog/monolog": "~1.11",
+        "pimple/pimple": "~3.0",
+        "doctrine/dbal": "~2.5",
+        "symfony/filesystem": "~2.6",
+        "predis/predis": "~1.0",
+        "pda/pheanstalk":"^3.1",
+	"symfony/finder": "~3.1",
+        "zendframework/zend-i18n": "^2.7",
+        "zendframework/zend-validator": "^2.10"
+},
+
+    "require-dev": {
+        "phpunit/phpunit": "~4.8 || ~5.0",
+        "mockery/mockery": "~0.9"
+    },
+
+	"autoload": {
+        "classmap": [ "src/"],
+        "psr-4":{
+            "CardGame\\": "src/"
+
+        }
+    }
+
+}
