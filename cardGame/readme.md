@@ -1,9 +1,7 @@
 Clone/Download This Directory
 
-Type php bin/App.php for options
+1. Type php bin/App.php for options
 
-And php bin/App.php dealer:playGame [players] [rounds] 
+2. php bin/App.php dealer:playGame [players] [rounds] to play the game
 
-to play the game
-
-composer test to run php formatter and phpunit tests
+3. composer test to run php formatter and phpunit tests
