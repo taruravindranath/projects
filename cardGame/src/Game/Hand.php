@@ -4,7 +4,7 @@ namespace CardGame\Game;
 
 use CardGame\Game\Card;
 
-class Hand 
+class Hand
 {
     private $hand = [];
 
@@ -59,7 +59,7 @@ class Hand
             for ($i = 1; $i < $totalCardsInHand; $i++) {
                 $card = $this->hand[$i];
                 if ($card->getValue() < $initialCard->getValue() ||
-                        $card->getValue() == $initialCard->getValue() 
+                        $card->getValue() == $initialCard->getValue()
                         && $card->getSuit() < $initialCard->getSuit()) {
                     $card = $initialCard;
                     $currentPos = $i;
@@ -74,7 +74,7 @@ class Hand
     public function hasStraight(int $length, bool $sameSuit)
     {
         $totalCardsInHand = $this->getHandSize();
-        if($sameSuit) {
+        if ($sameSuit) {
             if ($totalCardsInHand >= $length &&
                     $this->flushExists($totalCardsInHand, $length)) {
                 return true;
@@ -89,13 +89,13 @@ class Hand
     
     private function flushExists($totalCardsInHand, $length) :bool
     {
-        for($initial = 0; $initial < $totalCardsInHand-$length; $initial++) {
+        for ($initial = 0; $initial < $totalCardsInHand-$length; $initial++) {
             $suit = $this->hand[$initial]->getSuit();
             $value = $this->hand[$initial]->getValue();
             for ($next = $initial+1; $next<$length; $next++) {
                 if ($this->hand[$next]->getSuit() != $suit) {
                     break;
-                } else if ($this->hand[$next]->getValue() != $value+1) {
+                } elseif ($this->hand[$next]->getValue() != $value+1) {
                     break;
                 }
             }
@@ -108,7 +108,7 @@ class Hand
     
     private function straightExists($totalCardsInHand, $length)
     {
-        for($initial = 0; $initial < $totalCardsInHand-$length; $initial++) {
+        for ($initial = 0; $initial < $totalCardsInHand-$length; $initial++) {
             $value = $this->hand[$initial]->getValue();
             for ($next = $initial+1; $next<$length; $next++) {
                 if ($this->hand[$next]->getValue() != $value+1) {

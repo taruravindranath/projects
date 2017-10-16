@@ -7,12 +7,12 @@ use CardGame\Game\Card;
 class Deck
 {
     
-    CONST SUITS = ["Clubs", "Diamonds", "Hearts", "Spades"];
-    CONST RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10",
+    const SUITS = ["Clubs", "Diamonds", "Hearts", "Spades"];
+    const RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10",
      "J", "Q", "K", "A"];
-    CONST RANK_OF_A = 1;
-    CONST IS_DEALT = 1;
-    CONST IS_NOT_DEALT = 0;
+    const RANK_OF_A = 1;
+    const IS_DEALT = 1;
+    const IS_NOT_DEALT = 0;
 
     private $deck;
     private $dealt;
@@ -24,7 +24,7 @@ class Deck
         $this->totalCards = $this->getTotalCards();
 
         $current = 0;
-        for($suit = 0; $suit < count(self::SUITS); $suit++) {
+        for ($suit = 0; $suit < count(self::SUITS); $suit++) {
             for ($value = self::RANK_OF_A; $value <= count(self::RANKS); $value++) {
                 $this->deck[$current] = new Card($suit, $value);
                 $this->dealt[$current] = self::IS_NOT_DEALT;
@@ -64,7 +64,7 @@ class Deck
     public function shuffle()
     {
         for ($i = 0; $i < $this->totalCards; $i++) {
-            $random = mt_rand(0,$this->totalCards -1);
+            $random = mt_rand(0, $this->totalCards -1);
             //swap with random card
             $temp = $this->deck[$random];
             $this->deck[$random] = $this->deck[$i];
@@ -86,5 +86,4 @@ class Deck
     {
         return count(self::SUITS) * count(self::RANKS);
     }
-    
 }

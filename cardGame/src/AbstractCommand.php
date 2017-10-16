@@ -76,7 +76,6 @@ abstract class AbstractCommand extends Command
 
         $filename = 'log_'.date('d-m-Y').'.log';
         return   new \Monolog\Handler\StreamHandler($this->getLoggerDir().'/'.$filename, $this->getLoggerLevel());
-
     }
 
     /**
@@ -84,7 +83,6 @@ abstract class AbstractCommand extends Command
      */
     protected function getLoggerDir()
     {
-        return '/tmp'; 
+        return '/tmp';
     }
-
 }

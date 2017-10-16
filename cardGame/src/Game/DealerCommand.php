@@ -10,13 +10,13 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class DealerCommand extends AbstractCommand 
+class DealerCommand extends AbstractCommand
 {
     private $config;
     
     /**
      * Configures DealerCommand to be called from Symphony Console.
-     * Usage- dealer:playGame [players] [rounds] 
+     * Usage- dealer:playGame [players] [rounds]
      */
     protected function configure()
     {
@@ -28,13 +28,13 @@ class DealerCommand extends AbstractCommand
     /**
     * Executes all required functions.
     */
-   protected function execute(InputInterface $input, OutputInterface $output)
-   {
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
         $this->setConfig($input);
         if ($this->isValid($this->config)) {
             $rounds = (int)$this->config['rounds'];
             
-            while($rounds > 0) {
+            while ($rounds > 0) {
                 $i = 0;
                 $deck = new Deck();
                 $deck->display();
@@ -54,24 +54,24 @@ class DealerCommand extends AbstractCommand
                 $rounds--;
             }
         }
-   }
+    }
    
     private function setConfig(InputInterface $input)
     {
         $config['players'] = $input->getArgument('players');
         $config['rounds'] = $input->getArgument('rounds');
         
-        $this->config = $config;       
-   }
+        $this->config = $config;
+    }
    
-   private function isValid() :bool
-   {
-       if ($this->isValidInteger($this->config['players']) 
+    private function isValid() :bool
+    {
+        if ($this->isValidInteger($this->config['players'])
                && $this->isValidInteger($this->config['rounds'])) {
-           return true;
-       }
-       return false;
-   }
+            return true;
+        }
+        return false;
+    }
 
     /**
      * Returns bool
@@ -88,15 +88,15 @@ class DealerCommand extends AbstractCommand
     protected function addArguments()
     {
         $this->addArgument(
-                 'players',
-                 InputArgument::REQUIRED,
-                'Enter the number of players to play card game'
-            );
+            'players',
+            InputArgument::REQUIRED,
+            'Enter the number of players to play card game'
+        );
         
         $this->addArgument(
-                 'rounds',
-                 InputArgument::REQUIRED,
-                'Enter the number of rounds'
-            );
+            'rounds',
+            InputArgument::REQUIRED,
+            'Enter the number of rounds'
+        );
     }
 }
