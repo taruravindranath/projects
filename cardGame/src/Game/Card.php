@@ -28,12 +28,12 @@ class Card
         }
     }
     
-    public function getSuit()
+    public function getSuit() :int
     {
         return $this->suit;
     }
 
-    public function getValue()
+    public function getValue() :int
     {
         return $this->value;
     }
