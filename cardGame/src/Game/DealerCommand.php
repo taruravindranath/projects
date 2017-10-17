@@ -53,6 +53,26 @@ class DealerCommand extends AbstractCommand
                 $deck->display();
                 $rounds--;
             }
+            
+            //make a hand have a straight
+            $testHand = new Hand();
+            $testHand->addCard(new Card(3, 3));
+            $testHand->addCard(new Card(3, 4));
+            $testHand->addCard(new Card(3, 5));
+            
+            if ($testHand->hasStraight(2, false)) {
+                echo "This hand has a straight of 2 cards: hands[$i]: ";
+                $testHand->display();
+            }
+            if ($testHand->hasStraight(3, false)) {
+                echo "This hand has a straight of 3 cards: hands[$i]: ";
+                $testHand->display();
+            }
+            if ($testHand->hasStraight(4, false)) {
+                echo "This hand has a straight of 4 cards: hands[$i]: ";
+                $testHand->display();
+            }
+            
         } else {
             throw new \Exception("Invalid Arguments passed. "
                     . "Please pass integers for [players] and [rounds]");

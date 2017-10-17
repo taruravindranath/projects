@@ -6,11 +6,12 @@ use CardGame\Game\Card;
 
 class Hand
 {
+    //array of Cards
     private $hand = [];
 
     public function display()
     {
-        echo "Displaying Hand: ";
+        echo "Displaying Hand: \n";
         for ($i = 0; $i < count($this->hand); $i++) {
             echo $this->hand[$i]->display();
         }
@@ -57,6 +58,9 @@ class Hand
         while ($totalCardsInHand > 0) {
             $initialCard = $this->hand[0];
             for ($i = 1; $i < $totalCardsInHand; $i++) {
+                var_export($totalCardsInHand);
+                var_export(count($this->hand));
+                var_export($this->hand);
                 $card = $this->hand[$i];
                 if ($card->getValue() < $initialCard->getValue() ||
                         $card->getValue() == $initialCard->getValue()
@@ -71,7 +75,7 @@ class Hand
         $this->hand = $sortedHand;
     }
     
-    public function hasStraight(int $length, bool $sameSuit)
+    public function hasStraight(int $length, bool $sameSuit) :bool
     {
         $totalCardsInHand = $this->getHandSize();
         if ($sameSuit) {
@@ -89,39 +93,44 @@ class Hand
     
     private function flushExists($totalCardsInHand, $length) :bool
     {
-        for ($initial = 0; $initial < $totalCardsInHand-$length; $initial++) {
+        for ($initial = 0; $initial <= $totalCardsInHand-$length+1; $initial++) {
             $suit = $this->hand[$initial]->getSuit();
             $value = $this->hand[$initial]->getValue();
-            for ($next = $initial+1; $next<$length; $next++) {
+            $repeatCount = 1;
+            for ($next = $initial+1; $next<$length+$initial; $next++) {
                 if ($this->hand[$next]->getSuit() != $suit) {
                     break;
                 } elseif ($this->hand[$next]->getValue() != $value+1) {
                     break;
                 }
+                $repeatCount++;
+                if ($repeatCount == $length) {
+                    return true;
+                }
             }
-            if ($next == $length) {
-                return true;
-            }
-            return false;
         }
+        return false;
     }
     
     private function straightExists($totalCardsInHand, $length)
     {
-        for ($initial = 0; $initial < $totalCardsInHand-$length; $initial++) {
+        for ($initial = 0; $initial < $totalCardsInHand-$length+1; $initial++) {
             $value = $this->hand[$initial]->getValue();
-            for ($next = $initial+1; $next<$length; $next++) {
+            $repeatCount = 1;
+            for ($next = $initial+1; $next<$length+$initial; $next++) {
                 if ($this->hand[$next]->getValue() != $value+1) {
                     break;
                 }
                 $value++;
+                $repeatCount++;    
+                if ($repeatCount == $length) {
+                    return true;
+                }
             }
-            if ($next == $length) {
-                return true;
-            }
-            return false;
         }
+        return false;
     }
+    
     private function getHandSize()
     {
         return count($this->hand);
