@@ -13,6 +13,8 @@
 		8D32382620803C8700216DF6 /* FirebaseBackend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D32382420803C8700216DF6 /* FirebaseBackend.xcdatamodeld */; };
 		8D32382820803C8700216DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D32382720803C8700216DF6 /* Assets.xcassets */; };
 		8D32382B20803C8700216DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D32382920803C8700216DF6 /* LaunchScreen.storyboard */; };
+		8D35A1B220897F4500848D76 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35A1B120897F4500848D76 /* FancyView.swift */; };
+		8D35A1B52089804700848D76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35A1B42089804700848D76 /* Constants.swift */; };
 		8D8ACFC32080441800AAAA6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */; };
 		CAF318C20E4178EC273EE97B /* Pods_FirebaseBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FB941B0278F709D2116373 /* Pods_FirebaseBackend.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		8D32382720803C8700216DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D32382A20803C8700216DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D32382C20803C8700216DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D35A1B120897F4500848D76 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		8D35A1B42089804700848D76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBE1E4C72EB6E5230E47B0D0 /* Pods-FirebaseBackend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseBackend.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseBackend/Pods-FirebaseBackend.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +69,7 @@
 		8D32381C20803C8700216DF6 /* FirebaseBackend */ = {
 			isa = PBXGroup;
 			children = (
+				8D35A1B32089803600848D76 /* Util */,
 				8D8ACFC62080460800AAAA6C /* Controller */,
 				8D8ACFC52080460100AAAA6C /* View */,
 				8D8ACFC4208045FA00AAAA6C /* Model */,
@@ -79,6 +84,14 @@
 			path = FirebaseBackend;
 			sourceTree = "<group>";
 		};
+		8D35A1B32089803600848D76 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8D35A1B42089804700848D76 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		8D8ACFC4208045FA00AAAA6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 		8D8ACFC52080460100AAAA6C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D35A1B120897F4500848D76 /* FancyView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -255,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D35A1B52089804700848D76 /* Constants.swift in Sources */,
 				8D32382620803C8700216DF6 /* FirebaseBackend.xcdatamodeld in Sources */,
 				8D32382020803C8700216DF6 /* SignInVC.swift in Sources */,
+				8D35A1B220897F4500848D76 /* FancyView.swift in Sources */,
 				8D32381E20803C8700216DF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
