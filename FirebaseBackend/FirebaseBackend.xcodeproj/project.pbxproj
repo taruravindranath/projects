@@ -20,6 +20,7 @@
 		8D35A1B52089804700848D76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35A1B42089804700848D76 /* Constants.swift */; };
 		8D782FAA2089928900906915 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D782FA92089928900906915 /* UIKit.framework */; };
 		8D8ACFC32080441800AAAA6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */; };
+		8DD3DB46208D351E00E18F36 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3DB45208D351E00E18F36 /* FeedVC.swift */; };
 		CAF318C20E4178EC273EE97B /* Pods_FirebaseBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FB941B0278F709D2116373 /* Pods_FirebaseBackend.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		8D782FA92089928900906915 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D885BE7208CF2D200C70993 /* FirebaseBackend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseBackend.entitlements; sourceTree = "<group>"; };
 		8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DD3DB45208D351E00E18F36 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		BBE1E4C72EB6E5230E47B0D0 /* Pods-FirebaseBackend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseBackend.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseBackend/Pods-FirebaseBackend.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				8D32381F20803C8700216DF6 /* SignInVC.swift */,
+				8DD3DB45208D351E00E18F36 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -267,6 +271,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -297,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD3DB46208D351E00E18F36 /* FeedVC.swift in Sources */,
 				8D35A1B52089804700848D76 /* Constants.swift in Sources */,
 				8D32382620803C8700216DF6 /* FirebaseBackend.xcdatamodeld in Sources */,
 				8D32382020803C8700216DF6 /* SignInVC.swift in Sources */,
