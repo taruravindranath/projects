@@ -1,14 +1,15 @@
 //
-//  FancyView.swift
+//  RoundBtn.swift
 //  FirebaseBackend
 //
-//  Created by Tarun on 4/19/18.
+//  Created by Tarun on 4/22/18.
 //  Copyright © 2018 VApp. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIView {
+class RoundBtn: UIButton {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -16,6 +17,13 @@ class FancyView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        imageView?.contentMode = .scaleAspectFit
     }
 
+    override func layoutSubviews() {
+        // frame size is worked out at this time
+        super.layoutSubviews()
+        
+        layer.cornerRadius = self.frame.width / 2
+    }
 }

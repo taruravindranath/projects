@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D04DF3B208CD50D007438F4 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04DF3A208CD50D007438F4 /* RoundBtn.swift */; };
+		8D04DF3D208CD68E007438F4 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04DF3C208CD68E007438F4 /* FancyField.swift */; };
+		8D04DF3F208CD7FF007438F4 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04DF3E208CD7FF007438F4 /* FancyBtn.swift */; };
 		8D32381E20803C8700216DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32381D20803C8700216DF6 /* AppDelegate.swift */; };
 		8D32382020803C8700216DF6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32381F20803C8700216DF6 /* SignInVC.swift */; };
 		8D32382320803C8700216DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D32382120803C8700216DF6 /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		8D32382B20803C8700216DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D32382920803C8700216DF6 /* LaunchScreen.storyboard */; };
 		8D35A1B220897F4500848D76 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35A1B120897F4500848D76 /* FancyView.swift */; };
 		8D35A1B52089804700848D76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35A1B42089804700848D76 /* Constants.swift */; };
+		8D782FAA2089928900906915 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D782FA92089928900906915 /* UIKit.framework */; };
 		8D8ACFC32080441800AAAA6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */; };
 		CAF318C20E4178EC273EE97B /* Pods_FirebaseBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FB941B0278F709D2116373 /* Pods_FirebaseBackend.framework */; };
 /* End PBXBuildFile section */
@@ -22,6 +26,9 @@
 /* Begin PBXFileReference section */
 		24FB941B0278F709D2116373 /* Pods_FirebaseBackend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseBackend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B15EBA853DF9879B58CDD11 /* Pods-FirebaseBackend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseBackend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseBackend/Pods-FirebaseBackend.debug.xcconfig"; sourceTree = "<group>"; };
+		8D04DF3A208CD50D007438F4 /* RoundBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		8D04DF3C208CD68E007438F4 /* FancyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		8D04DF3E208CD7FF007438F4 /* FancyBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		8D32381A20803C8700216DF6 /* FirebaseBackend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseBackend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D32381D20803C8700216DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D32381F20803C8700216DF6 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -32,6 +39,7 @@
 		8D32382C20803C8700216DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D35A1B120897F4500848D76 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		8D35A1B42089804700848D76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D782FA92089928900906915 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBE1E4C72EB6E5230E47B0D0 /* Pods-FirebaseBackend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseBackend.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseBackend/Pods-FirebaseBackend.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D782FAA2089928900906915 /* UIKit.framework in Frameworks */,
 				CAF318C20E4178EC273EE97B /* Pods_FirebaseBackend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				8D35A1B120897F4500848D76 /* FancyView.swift */,
+				8D04DF3A208CD50D007438F4 /* RoundBtn.swift */,
+				8D04DF3C208CD68E007438F4 /* FancyField.swift */,
+				8D04DF3E208CD7FF007438F4 /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 		E4C640152C97A4E2145107F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D782FA92089928900906915 /* UIKit.framework */,
 				24FB941B0278F709D2116373 /* Pods_FirebaseBackend.framework */,
 			);
 			name = Frameworks;
@@ -272,7 +285,10 @@
 				8D35A1B52089804700848D76 /* Constants.swift in Sources */,
 				8D32382620803C8700216DF6 /* FirebaseBackend.xcdatamodeld in Sources */,
 				8D32382020803C8700216DF6 /* SignInVC.swift in Sources */,
+				8D04DF3B208CD50D007438F4 /* RoundBtn.swift in Sources */,
 				8D35A1B220897F4500848D76 /* FancyView.swift in Sources */,
+				8D04DF3D208CD68E007438F4 /* FancyField.swift in Sources */,
+				8D04DF3F208CD7FF007438F4 /* FancyBtn.swift in Sources */,
 				8D32381E20803C8700216DF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
