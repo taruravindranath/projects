@@ -433,6 +433,7 @@
 				CODE_SIGN_ENTITLEMENTS = FirebaseBackend/FirebaseBackend.entitlements;
 				DEVELOPMENT_TEAM = SM3VK3R3P6;
 				INFOPLIST_FILE = FirebaseBackend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarApp.FirebaseBackend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +449,7 @@
 				CODE_SIGN_ENTITLEMENTS = FirebaseBackend/FirebaseBackend.entitlements;
 				DEVELOPMENT_TEAM = SM3VK3R3P6;
 				INFOPLIST_FILE = FirebaseBackend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarApp.FirebaseBackend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
