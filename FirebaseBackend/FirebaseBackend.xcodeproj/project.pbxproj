@@ -19,6 +19,7 @@
 		8D32382B20803C8700216DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D32382920803C8700216DF6 /* LaunchScreen.storyboard */; };
 		8D35A1B220897F4500848D76 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35A1B120897F4500848D76 /* FancyView.swift */; };
 		8D35A1B52089804700848D76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35A1B42089804700848D76 /* Constants.swift */; };
+		8D4BA4DD2092BD9100672EA5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4BA4DC2092BD9100672EA5 /* DataService.swift */; };
 		8D782FAA2089928900906915 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D782FA92089928900906915 /* UIKit.framework */; };
 		8D8ACFC32080441800AAAA6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */; };
 		8DD3DB46208D351E00E18F36 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3DB45208D351E00E18F36 /* FeedVC.swift */; };
@@ -43,6 +44,7 @@
 		8D32382C20803C8700216DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D35A1B120897F4500848D76 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		8D35A1B42089804700848D76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D4BA4DC2092BD9100672EA5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8D782FA92089928900906915 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D885BE7208CF2D200C70993 /* FirebaseBackend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseBackend.entitlements; sourceTree = "<group>"; };
 		8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		8D32381C20803C8700216DF6 /* FirebaseBackend */ = {
 			isa = PBXGroup;
 			children = (
+				8D4BA4DB2092BD7400672EA5 /* Services */,
 				8D885BE7208CF2D200C70993 /* FirebaseBackend.entitlements */,
 				8D35A1B32089803600848D76 /* Util */,
 				8D8ACFC62080460800AAAA6C /* Controller */,
@@ -107,6 +110,14 @@
 				8D35A1B42089804700848D76 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		8D4BA4DB2092BD7400672EA5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D4BA4DC2092BD9100672EA5 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		8D8ACFC4208045FA00AAAA6C /* Model */ = {
@@ -311,6 +322,7 @@
 				8DD3DB46208D351E00E18F36 /* FeedVC.swift in Sources */,
 				8D35A1B52089804700848D76 /* Constants.swift in Sources */,
 				8D32382620803C8700216DF6 /* FirebaseBackend.xcdatamodeld in Sources */,
+				8D4BA4DD2092BD9100672EA5 /* DataService.swift in Sources */,
 				8D32382020803C8700216DF6 /* SignInVC.swift in Sources */,
 				8D04DF3B208CD50D007438F4 /* RoundBtn.swift in Sources */,
 				8D35A1B220897F4500848D76 /* FancyView.swift in Sources */,
