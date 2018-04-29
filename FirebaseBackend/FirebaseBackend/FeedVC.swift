@@ -55,15 +55,19 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let post = posts[indexPath.row]
         print("FBack: \(post.caption)")
         
-        return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
+            cell.configureCell(post: post)
+            return cell
+        } else {
+            return PostCell()
+        }
     }
     
     @IBAction func signoutBtnPressed(_ sender: Any) {
         // remove from keychain
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("FBack: ID removed from \(keychainResult)")
-        
-        // sign out from firebase
+                // sign out from firebase
         try! Auth.auth().signOut()
         performSegue(withIdentifier: "goToSignIn", sender: nil)
     }

@@ -332,6 +332,13 @@
                                                 <constraint firstItem="QTU-UX-cyI" firstAttribute="leading" secondItem="F72-wZ-equ" secondAttribute="leading" constant="16" id="zjT-Ap-BzD"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="qWJ-by-Spd" id="qfO-Rs-s0k"/>
+                                            <outlet property="likesLbl" destination="ply-DW-FgB" id="vEb-sK-zPx"/>
+                                            <outlet property="postImg" destination="VpK-8F-pTr" id="JSk-kB-nZO"/>
+                                            <outlet property="profileImg" destination="8XL-Bq-LEh" id="KV0-pf-NXb"/>
+                                            <outlet property="usernameLbl" destination="qEH-Fu-na3" id="Peg-v2-YF7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
