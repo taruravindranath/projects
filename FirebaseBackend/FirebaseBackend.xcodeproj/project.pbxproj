@@ -22,6 +22,7 @@
 		8D4BA4DD2092BD9100672EA5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4BA4DC2092BD9100672EA5 /* DataService.swift */; };
 		8D782FAA2089928900906915 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D782FA92089928900906915 /* UIKit.framework */; };
 		8D8ACFC32080441800AAAA6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */; };
+		8DA6F9FF2096821E000E732D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6F9FE2096821E000E732D /* Post.swift */; };
 		8DD3DB46208D351E00E18F36 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3DB45208D351E00E18F36 /* FeedVC.swift */; };
 		8DD3DB48208D4AA100E18F36 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3DB47208D4AA100E18F36 /* CircleView.swift */; };
 		CAF318C20E4178EC273EE97B /* Pods_FirebaseBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FB941B0278F709D2116373 /* Pods_FirebaseBackend.framework */; };
@@ -48,6 +49,7 @@
 		8D782FA92089928900906915 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D885BE7208CF2D200C70993 /* FirebaseBackend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseBackend.entitlements; sourceTree = "<group>"; };
 		8D8ACFC22080441800AAAA6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DA6F9FE2096821E000E732D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8DD3DB45208D351E00E18F36 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		8DD3DB47208D4AA100E18F36 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BBE1E4C72EB6E5230E47B0D0 /* Pods-FirebaseBackend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseBackend.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseBackend/Pods-FirebaseBackend.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		8D32381C20803C8700216DF6 /* FirebaseBackend */ = {
 			isa = PBXGroup;
 			children = (
+				8DA6F9FD20968200000E732D /* New Group */,
 				8D4BA4DB2092BD7400672EA5 /* Services */,
 				8D885BE7208CF2D200C70993 /* FirebaseBackend.entitlements */,
 				8D35A1B32089803600848D76 /* Util */,
@@ -123,6 +126,7 @@
 		8D8ACFC4208045FA00AAAA6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8DA6F9FE2096821E000E732D /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -147,6 +151,13 @@
 				8DD3DB45208D351E00E18F36 /* FeedVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		8DA6F9FD20968200000E732D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		A26C55AF66F364F432369BB0 /* Pods */ = {
@@ -323,6 +334,7 @@
 				8D35A1B52089804700848D76 /* Constants.swift in Sources */,
 				8D32382620803C8700216DF6 /* FirebaseBackend.xcdatamodeld in Sources */,
 				8D4BA4DD2092BD9100672EA5 /* DataService.swift in Sources */,
+				8DA6F9FF2096821E000E732D /* Post.swift in Sources */,
 				8D32382020803C8700216DF6 /* SignInVC.swift in Sources */,
 				8D04DF3B208CD50D007438F4 /* RoundBtn.swift in Sources */,
 				8D35A1B220897F4500848D76 /* FancyView.swift in Sources */,
