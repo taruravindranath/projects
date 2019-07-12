@@ -23,7 +23,7 @@ app.prepare()
     server.use(useragent.express());
     server.enable('trust proxy');
     server.use(bodyParser.json());
-    server.use('/pubimages/', express.static(path.join(__dirname, `public/images/`)));
+    server.use('/appimages/', express.static(path.join(__dirname, `public/images/`)));
     server.use(cookieParser());
     server.use(express.static(path.join(__dirname, 'public')));
     server.use(detector.middleware());
