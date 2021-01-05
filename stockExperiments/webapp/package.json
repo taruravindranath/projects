@@ -18,7 +18,7 @@
     "@zeit/next-css": "^1.0.1",
     "apollo-boost": "^0.1.3",
     "apollo-link-state": "^0.4.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
