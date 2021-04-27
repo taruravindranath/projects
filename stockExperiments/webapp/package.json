@@ -84,7 +84,7 @@
     "react-select": "1.2.1",
     "react-slick": "^0.23.2",
     "react-table": "^6.9.2",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "regenerator-runtime": "^0.13.2",
     "safe-eval": "^0.4.1",
     "serve-static": "^1.13.2",
